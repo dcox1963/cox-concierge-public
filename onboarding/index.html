@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cox Concierge household onboarding and SMS opt-in disclosure.">
+  <title>SMS Opt-In | Cox Concierge Services</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script src="/assets/app.js" defer></script>
+</head>
+<body>
+  <header class="site-header"><div class="wrap header-row"><a class="brand" href="/"><span class="brand-mark">CC</span><span><span class="brand-name">Cox Concierge</span><span class="brand-tag">Your neighborhood helper</span></span></a><nav class="nav" aria-label="Primary navigation"><a href="/onboarding/" aria-current="page">SMS opt-in</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav></div></header>
+
+  <main class="page-shell">
+    <header class="page-head"><p class="eyebrow">Household onboarding</p><h1>A few details. Then it gets easy.</h1><p>This publicly accessible page shows the Cox Concierge SMS consent process. Text messages are optional and consent is not a condition of purchase.</p></header>
+
+    <form class="panel" data-onboarding-form novalidate>
+      <label class="field">Household name<input name="household" autocomplete="organization" placeholder="The Cox household" required></label>
+      <label class="field">Primary contact<input name="contact" autocomplete="name" placeholder="First and last name" required></label>
+      <label class="field">Mobile phone<input name="phone" type="tel" autocomplete="tel" placeholder="For service-related text updates" required></label>
+      <label class="field">Preferred contact<select name="preference" required><option value="text" selected>Text message</option><option value="email">Email</option><option value="phone">Phone call</option></select></label>
+
+      <label class="consent">
+        <input id="sms-consent" name="sms-consent" type="checkbox" required>
+        <span><strong>Yes, send me service-related texts.</strong> By selecting Text, providing my mobile number, and checking this box, I agree to receive recurring Cox Concierge request confirmations, coordination questions, quote or payment updates, and request status updates from <strong>361-266-4431</strong>. Message frequency varies according to my activity. Message and data rates may apply. Reply <strong>STOP</strong> to unsubscribe or <strong>HELP</strong> for help. Consent is not a condition of purchase. See the <a href="/terms/">Terms</a> and <a href="/privacy/">Privacy Policy</a>.</span>
+      </label>
+
+      <button class="button" type="submit">Confirm SMS consent</button>
+      <p id="form-status" class="notice hidden" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <footer class="site-footer"><strong>Cox Concierge Services</strong><br>Questions? Call <a href="tel:+13612664431">361-266-4431</a> or email <a href="mailto:donnieandbonita@gmail.com">donnieandbonita@gmail.com</a>.<nav class="footer-links"><a href="/privacy/">Privacy</a><a href="/terms/">Terms &amp; texting</a></nav></footer>
+</body>
+</html>
